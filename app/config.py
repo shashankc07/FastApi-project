@@ -6,7 +6,7 @@ class Settings(BaseSettings):    # class for setting up environment path variabl
     db_port: str = "8080"
     db_name: str
     db_username: str
-    db_password: str = "shashank007"
+    db_password: str
     secret_key: str
     algorithm: str
     access_token_expire_minutes: int
