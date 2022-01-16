@@ -1,0 +1,14 @@
+[unit]
+description=gunicorn instance service
+After=network.target
+
+[Service]
+User=shashank
+Group=shashank
+WorkingDirectory=/home/shashank/App/src
+Environment="PATH=/home/shashank/App/venv/bin"
+EnvironmentFile=/home/shashank/.env
+ExecStart=/home/shashank/App/venv/bin/gunicorn -w 2 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
+
+[Install]
+WantedBy=multi-user.target

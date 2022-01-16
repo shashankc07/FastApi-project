@@ -26,4 +26,4 @@ app.include_router(votes.router)
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to our API for creating and managing awesome posts !"}
+    return {"Message": "Welcome to our API for creating and managing awesome posts !"}
