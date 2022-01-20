@@ -6,11 +6,11 @@ on:
       - "main"
       - "developer"
 
-  jobs:
-    job1:
-      runs-on: ubuntu-latest
-      steps:
-        - name: pulling the repo
-          uses: actions/checkout@v2
-        - name: say hi to shashank
-          run: "Hi Shashank !"
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling the repo
+        uses: actions/checkout@v2
+      - name: say hi to shashank
+        run: "Hi Shashank !"
