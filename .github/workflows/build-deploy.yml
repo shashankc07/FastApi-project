@@ -13,4 +13,4 @@ jobs:
       - name: pulling the repo
         uses: actions/checkout@v2
       - name: say hi to shashank
-        run: "Hi Shashank !"
+        run: echo "Hi Shashank !"
