@@ -8,6 +8,17 @@ on:
 
 jobs:
   job1:
+    environment:
+      name: PL1-Testing
+    env:
+      DB_HOSTNAME = ${{secrets.DB_HOSTNAME}}
+      DB_PORT = ${{secrets.DB_PORT}}
+      DB_NAME = ${{secrets.DB_NAME}}
+      DB_USERNAME = ${{secrets.DB_USERNAME}}
+      DB_PASSWORD = ${{secrets.DB_PASSWORD}}
+      SECRET_KEY = ${{secrets.SECRET_KEY}}
+      ALGORITHM = ${{secrets.ALGORITHM}}
+      ACCESS_TOKEN_EXPIRE_MINUTES = ${{secrets.ACCESS_TOKEN_EXPIRE_MINUTES}}
     runs-on: ubuntu-latest
     steps:
       - name: pulling the repo
